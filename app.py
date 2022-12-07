@@ -101,7 +101,7 @@ if load_button or st.session_state.load_state:
     var_satis_score = round(np.var(data['Satisfation score']),2)
     
     col3, col4, col5,col6 = st.columns(4)
-    col3.metric('# of Tweets',number_of_tweets)
+    col3.metric('Number of Tweets',number_of_tweets)
     col4.metric('Overall Sentiment',sentiment_res)
     col5.metric('NPS Score',nps_score,nps_delta)
     col6.metric('Avg. Satisfaction Score',avg_satis_score,var_satis_score)
